@@ -55,6 +55,7 @@ namespace NBug.Core.UI.WinForms
 
 			// ToDo: Fill in the 'Report Contents' tab);
 			this.ShowDialog();
+            this.descriptionTextBox.Focus();
 
 			// Write back the user description (as we passed 'report' as a reference since it is a refence object anyway)
 			report.GeneralInfo.UserDescription = this.descriptionTextBox.Text;
